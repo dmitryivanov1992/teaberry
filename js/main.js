@@ -73,6 +73,12 @@ $(document).ready(() => {
         })
     }
 
+    if ($(window)[0].innerWidth < 1031){
+        $($('#menu-container a')[4]).attr("href","#contacts");
+    }
+
+    $('#gathering-video').height($('#gathering-video').width() / 1.5);
+
 
 
 })

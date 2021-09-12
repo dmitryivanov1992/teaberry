@@ -741,4 +741,12 @@
         width: 260px;
         height: 260px;
     }
+
+    #contacts{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contacts .footer-block:nth-child(3){
+        justify-self: end;
+    }
 }
