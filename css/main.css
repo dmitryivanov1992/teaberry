@@ -30,7 +30,6 @@
     box-sizing: border-box;
 }
 
-
 .green-btn {
     background: -moz-linear-gradient(90deg, rgb(206, 247, 72) 0%, rgb(175, 218, 85) 52%, rgb(143, 188, 98) 100%);
     background: -webkit-linear-gradient(90deg, rgb(206, 247, 72) 0%, rgb(175, 218, 85) 52%, rgb(143, 188, 98) 100%);

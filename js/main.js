@@ -79,7 +79,19 @@ $(document).ready(() => {
 
     $('#gathering-video').height($('#gathering-video').width() / 1.5);
 
+        new WOW(
+            {
+                animateClass: 'animate__animated',
+                mobile: true
+            }).init();
 
 
+
+    let animatedElements = $('.animate__animated');
+
+    for (let item of animatedElements) {
+        $(item).addClass('animate__delay-1s');
+        console.log(item);
+    }
 })
 
