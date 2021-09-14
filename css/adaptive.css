@@ -229,6 +229,17 @@
         flex-shrink: 0;
     }
 
+    #order-popup{
+        padding:0 20px;
+    }
+
+    #order-container{
+        background: white;
+        justify-content: center;
+        width: 560px;
+        padding: 40px;
+    }
+
 }
 
 @media screen and (max-width: 931px) {
@@ -316,6 +327,10 @@
 
     #promo-block .title {
         grid-column: unset;
+    }
+
+    #order-container-content .title{
+        font-size: 45px;
     }
 }
 
@@ -495,6 +510,79 @@
 }
 
 @media screen and (max-width: 591px) {
+
+    #order-container{
+        width: calc(100% - 40px);
+    }
+
+    #order-product-input{
+        width: 100%;
+    }
+
+    #order-container-content .green-btn{
+        width: 100%;
+    }
+
+    #order-product-list{
+        width: 100%;
+    }
+
+    .order-list-group:hover .order-list-items{
+        left:unset;
+        top:-21px;
+        right: 0;
+        border-top-right-radius: 0;
+    }
+
+    #blackTea-list:hover .order-list-items{
+        left:unset;
+        top:-57px;
+        right: 0;
+    }
+
+    #greenTea-list:hover .order-list-items{
+        left:unset;
+        top:-92px;
+        right: 0;
+    }
+
+    #whiteTea-list:hover .order-list-items{
+        left:unset;
+        top:unset;
+        bottom: -37px;
+        right: 0;
+    }
+
+    #exclusiveMixes-list:hover .order-list-items{
+        left:unset;
+        top:unset;
+        bottom: 0;
+        right: 0;
+    }
+
+    #order-name-input{
+        width:calc(62% - 32px);
+    }
+
+    #order-weight-input{
+        width: 38%;
+    }
+
+    #order-phone-input{
+        width:50%;
+    }
+
+    #order-container-content .title{
+        font-size: 40px;
+    }
+
+    #popup-closer{
+        top:20px;
+        right: 20px;
+    }
+
+
+
     .features-block {
         flex-direction: column;
         row-gap: 20px;
@@ -567,6 +655,10 @@
 }
 
 @media screen and (max-width: 531px) {
+
+    .order-list-items{
+        width: 170px;
+    }
 
     #menu-container a {
         display: none;
@@ -683,9 +775,41 @@
         font-size: 15px;
     }
 
+    #order-container-content .title{
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+
+    #order-button{
+        margin-top: 25px;
+    }
+
+    #order-container-content .green-btn{
+        font-size: 15px;
+        height: 60px;
+    }
+
+    #order-container-content .green-btn:hover{
+        background-position: 0 60px;
+    }
+
+    #order-name-input, #order-weight-input,#order-phone-input,#order-product-input{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #order-container-inputs{
+        row-gap:20px;
+    }
+
 }
 
 @media screen and (max-width: 385px) {
+
+    #order-container-content .green-btn{
+    padding: 0 55px;
+    }
+
     .features-block .features-block-title{
         margin-bottom: unset;
         font-size: 20px;

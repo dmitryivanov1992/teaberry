@@ -19,7 +19,7 @@
         <a href="#properties">Полезные свойства</a>
         <a href="#footer">Контакты</a>
     </div>
-    <div id="burger-button">&#9776; </div>
+    <div id="burger-button">&#9776;</div>
     <div id="slide-menu">
         <a href="#range">Ассортимент</a>
         <a href="#gathering">Как мы собираем чай</a>
@@ -30,7 +30,9 @@
     <div id="main-container">
         <div id="main-smoke"><img src="images/smoke_PNG55193.png" alt=""></div>
         <div id="main-content">
-            <div class="title animate__animated animate__flipInX">Эксклюзивный чай <div>из разных уголков планеты</div></div>
+            <div class="title animate__animated animate__flipInX">Эксклюзивный чай
+                <div>из разных уголков планеты</div>
+            </div>
             <div id="main-text">У нас вы сможете найти чай со всего мира, самых невообразимых вкусов и ароматов</div>
             <button class="green-btn">Выбрать чай</button>
         </div>
@@ -93,7 +95,7 @@
         <div class="title">
             У нас вы найдете
         </div>
-        <div class="features-block wow animate__bounceInLeft animate__animated animate__delay-1s">
+        <div class="features-block wow animate__bounceInLeft animate__animated">
             <div class="features-block-image">
                 <div class="features-block-inner-circle">
                     <img src="images/stockvault-freshness.png" alt="">
@@ -106,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class="features-block wow animate__bounceInRight animate__animated animate__delay-1s">
+        <div class="features-block wow animate__bounceInRight animate__animated">
             <div class="features-block-image">
                 <div class="features-block-inner-circle">
                     <img src="images/giftboxes.png" alt="">
@@ -121,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="features-block wow animate__bounceInLeft animate__animated animate__delay-1s">
+        <div class="features-block wow animate__bounceInLeft animate__animated">
             <div class="features-block-image">
                 <div class="features-block-inner-circle">
                     <img src="images/tea-mixes.png" alt="">
@@ -134,7 +136,7 @@
                 </div>
             </div>
         </div>
-        <div class="features-block wow animate__bounceInRight animate__animated animate__delay-1s">
+        <div class="features-block wow animate__bounceInRight animate__animated">
             <div class="features-block-image">
                 <div class="features-block-inner-circle">
                     <img src="images/tea-accessories.png" alt="">
@@ -178,7 +180,7 @@
                         <div class="cart-content-price-weight">
                             100 гр / 410 руб.
                         </div>
-                        <button class="green-btn">Купить</button>
+                        <button class="green-bwtn">Купить</button>
                     </div>
                 </div>
             </div>
@@ -557,16 +559,19 @@
 <div id="promo">
     <div id="promo-block">
         <div class="title">Акция для новых клиентов</div>
-        <div id="promo-image" class="wow animate__heartBeat animate__animated"><img src="images/promo_cup.png" alt=""></div>
+        <div id="promo-image" class="wow animate__heartBeat animate__animated"><img src="images/promo_cup.png" alt="">
+        </div>
         <div id="promo-content">
             <div class="promo-content-text">Дарим скидку <span>5%</span> на первый заказ!</div>
             <div class="promo-content-text">Скопируйте промокод из письма и ставьте чайник</div>
-            <form action="#">
+            <div id="promo-input">
                 <input type="email" id="promo-content-input" placeholder="example@gmail.com" name="promo-email">
-                <button class="green-btn" type="submit">Получить скидку</button>
-            </form>
+            </div>
+            <button class="green-btn">Получить скидку</button>
         </div>
+        <div id="promo-sent">Мы отправили промокод на указанную почту</div>
     </div>
+
 </div>
 <div id="properties">
     <div id="properties-container">
@@ -679,7 +684,9 @@
         <div class="title">Как мы собираем наш чай</div>
         <div id="gathering-content">
             <div id="gathering-video">
-                <iframe src="https://www.youtube.com/embed/dDu-piWKaq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/dDu-piWKaq8" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 <div id="video-circle">
                     <div id="video-inner-circle"></div>
                 </div>
@@ -808,6 +815,55 @@
         <div id="footer-leaf">
             <img src="images/6-sella-box.png" alt="">
         </div>
+    </div>
+</div>
+<div id="order-popup">
+    <div id="order-container">
+        <div id="order-container-content">
+            <div class="title">Оформление заказа</div>
+            <div id="order-container-inputs">
+                <div id="order-product-input" class="order-input">
+                    <input type="text" name="product" placeholder="Ваш заказ" readonly>
+                    <div id="order-product-list">
+                        <div class="order-list-group" id="oolong-list">Улун
+                            <div class="order-list-items animate__animated animate__fadeInUp">
+
+                            </div>
+                        </div>
+                        <div class="order-list-group" id="blackTea-list">Черный чай
+                            <div class="order-list-items animate__animated animate__fadeInUp">
+
+                            </div>
+                        </div>
+                        <div class="order-list-group" id="greenTea-list">Зеленый чай
+                            <div class="order-list-items animate__animated animate__fadeInUp">
+
+                            </div>
+                        </div>
+                        <div class="order-list-group" id="whiteTea-list">Белый чай
+                            <div class="order-list-items animate__animated animate__fadeInUp">
+
+                            </div>
+                        </div>
+                        <div class="order-list-group" id="exclusiveMixes-list">Экслюзивные миксы
+                            <div class="order-list-items animate__animated animate__fadeInUp">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="order-weight-input" class="order-input"><input type="text" placeholder="Кол-во грамм"></div>
+                <div id="order-name-input" class="order-input"><input type="text" placeholder="Ваше имя"></div>
+                <div id="order-phone-input" class="order-input"><input type="tel" placeholder="Ваш телефон"></div>
+            </div>
+            <div id="order-button">
+                <button class="green-btn">Оформить заказ</button>
+            </div>
+        </div>
+        <div id="popup-closer">
+            <img src="images/close.png" alt="">
+        </div>
+
     </div>
 </div>
 </body>
