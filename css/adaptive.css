@@ -240,6 +240,12 @@
         padding: 40px;
     }
 
+    #order-sent-container{
+        width: 671px;
+        height: 439px;
+        padding: 40px 40px 0 0;
+    }
+
 }
 
 @media screen and (max-width: 931px) {
@@ -468,6 +474,28 @@
 }
 
 @media screen and (max-width: 700px) {
+
+    #order-sent-container{
+        background: white;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% - 40px);
+        padding:15px;
+    }
+
+    #order-sent-container::after{
+        content: '';
+        background: url("../images/advantages_left_bg.png");
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 100%;
+    }
+
+    #order-sent-content {
+        text-align: center;
+    }
 
     #range-menu {
         flex-wrap: wrap;

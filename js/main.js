@@ -9,7 +9,6 @@ $(document).ready(() => {
     let advantagesDownText = document.getElementsByClassName('advantages-block-down-text');
     for (let item of advantagesDownText) {
         new CircleType(item).dir(-1).radius(90);
-        console.log(item)
     }
     ;
 
@@ -209,7 +208,7 @@ $(document).ready(() => {
                 url: 'mail.php',
                 data: 'name=' + name.val() + '&product=' + product.val() + '&phone=' + phone.val() + '&weight=' + weight.val(),
                 success: () => {
-                    $('#order-success').show();
+                    $('#order-popup-sent').css('display','flex');
                     $('#order-container').hide();
                 },
                 error: () => {
@@ -228,12 +227,17 @@ $(document).ready(() => {
 
     //закрытие формы
 
-    $('#popup-closer , #order-popup').click((e) => {
-        if ((e.target.id === 'order-popup') || (e.currentTarget.id === 'popup-closer')) {
+    $('#order-container .popup-closer , #order-popup').click((e) => {
+        if ((e.target.id === 'order-popup') || (e.currentTarget.className === 'popup-closer')) {
             $('#order-popup').hide();
         }
     })
 
+    $('#order-sent-container .popup-closer , #order-popup-sent').click((e) => {
+              if ((e.target.id === 'order-popup-sent') || (e.currentTarget.className === 'popup-closer')) {
+            $('#order-popup-sent').hide();
+        }
+    })
 
     //нажатия кнопок
 
